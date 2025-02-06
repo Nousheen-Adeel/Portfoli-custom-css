@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100vh;
+}
+
+/* Navbar */
+.Navbar {
+  width: 100%;
+  height: auto;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Button Styles */
+.cv, .btn, .btn1 {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(35, 35, 235);
+  color: white;
+  width: 150px;
+  border-radius: 6px;
+  font-size: large;
+  font-weight: bold;
+}
+
+ul {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(143, 7, 136);
+}
+
+li {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.contact {
+  color: rgb(231, 222, 222);
+  position: relative;
+  padding: 10px;
+}
+
+.name {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Form */
+.form {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  border: 3px solid rgb(61, 128, 228);
+  background-color: rgb(136, 199, 241);
+  color: rgb(8, 8, 22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: blue;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(5, 13, 173);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  gap: 20px;
+}
+
+/* Profile */
+.profile {
+  width: 90%;
+  max-width: 500px;
+}
+
+.img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20%;
+}
+
+.info {
+  width: 90%;
+  max-width: 400px;
+  font-size: 22px;
+  font-weight: bolder;
+  margin-top: 30px;
+}
+
+/* Buttons */
+.btn1 {
+  width: 100%;
+  max-width: 220px;
+  font-size: 20px;
+  margin: 15px auto;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: rgb(73, 27, 199);
+  font-size: large;
+  margin-top: 80px;
+  padding-bottom: 10px;
+}
+
+/* Skills */
+.skills {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+/* Projects */
+.project {
+  margin: 5%;
+  padding: 10px;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.pro {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  width: 90%;
+  max-width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cardimg {
+  width: 100%;
+  height: auto;
+  border: 3px solid rgb(102, 11, 187);
+  border-radius: 5px;
+}
+
+/* Tag */
+.tag {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 10px;
+  color: black;
+  background-color: blue;
+  border: 5px solid rgb(104, 18, 185);
+}
+
+.detail {
+  width: 90%;
+  max-width: 300px;
+  margin: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .form, .info, .btn1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .btn1 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar {
+    padding: 10px;
+  }
+
+  .cv, .btn1 {
+    width: 90%;
+    max-width: 180px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .profile {
+    width: 100%;
+  }
+
+  .info {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 250px;
+    padding: 15px;
+  }
+}
