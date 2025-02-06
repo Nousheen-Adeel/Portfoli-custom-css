@@ -241,9 +241,8 @@ h4 {
 /* Hamburger Button */
 .hamburger {
   font-size: 30px;
-  background: none;
-  border: none;
-  color: white;
+  border:rgb(5, 13, 173);
+  color: purple;
   cursor: pointer;
   display: none; /* Hidden on larger screens */
 }
@@ -257,68 +256,56 @@ h4 {
 
 /* Mobile Menu (Hidden by Default) */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block; /* Show on small screens */
+  .Navbar {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 15px;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: black;
+    padding: 10px;
     position: absolute;
     top: 100px;
     left: 0;
-    width: 100%;
-    background: black;
-    text-align: center;
-    padding: 10px;
   }
 
-  /* Show menu when open */
   .nav-links.open {
     display: flex;
   }
-}
 
-@media (max-width: 768px) {
-  .Navbar {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
+  .hamburger {
+    display: block;
   }
 
   ul {
-    justify-content: center;
-    padding: 10px 0;
-    text-align: center;
+    flex-direction: column;
+    gap: 10px;
   }
 
-  .about {
+  .hero, .about {
     flex-direction: column;
     text-align: center;
-    gap: 40px;
+    padding: 20px;
   }
 
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-  }
-
-  .form, .info, .btn1 {
-    width: 90%;
+  .profile, .form, .info {
+    width: 100%;
     max-width: 100%;
   }
 
   .btn1 {
+    width: 100%;
     font-size: 18px;
   }
 
-  .main {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .card {
+    width: 90%;
     max-width: 100%;
   }
 }
@@ -329,9 +316,9 @@ h4 {
   }
 
   .cv, .btn1 {
-    width: auto;
-    min-width: 150px;
-    padding: 10px;
+    width: 100%;
+    min-width: auto;
+    padding: 12px;
   }
 
   .hero {
@@ -349,7 +336,7 @@ h4 {
 
   .card {
     width: 100%;
-    max-width: 280px;
+    max-width: 260px;
   }
 
   .tag {

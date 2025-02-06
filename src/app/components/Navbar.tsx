@@ -26,6 +26,9 @@ const Navbar = () => {
 
       {/* Download CV Button */}
       <button className='cv'>Download CV</button>
+      
+
+      
     </div>
   )
 }
