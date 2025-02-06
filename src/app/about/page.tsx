@@ -5,8 +5,10 @@ const page = () => {
   return (
         <div>
           <h4>WHO I AM</h4>
+          
           <div className='about'>
         <Image src="/Images/mypic.png" alt="profile picture" width={400} height={500} className='mypic'/>
+        
         
         <p>I’m  Nousheen currently a student at GIAIC, where I’m exploring the fascinating worlds of Artificial Intelligence, Web 3.0, and the Metaverse.
           <br />
